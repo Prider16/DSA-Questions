@@ -3,6 +3,24 @@
 #include<unordered_set>
 using namespace std;
 
+/*
+bool isSubset(vector<int> &a, vector<int> &b){
+    for(int i=0;i<b.size();i++){
+        bool flag = false;
+        for(int j=0;j<a.size();j++){
+            if(b.at(i) == a.at(j)){
+                flag=true;
+                break;
+            }
+        }
+        if(!flag){
+            return false;
+        }
+    }
+    return true;
+}
+*/
+
 bool isSubset(vector<int> &a, vector<int> &b){
     unordered_set<int> s(a.begin(),a.end()); 
 
